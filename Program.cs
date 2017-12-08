@@ -70,8 +70,8 @@ namespace ProgramList
             }
 
 
-            Console.WriteLine("n/Cadena final: ");
-            Console.WriteLine(datoR);
+            Console.WriteLine("Cadena final: {0}", datoR);
+            
 
             Console.ReadKey();
         }
