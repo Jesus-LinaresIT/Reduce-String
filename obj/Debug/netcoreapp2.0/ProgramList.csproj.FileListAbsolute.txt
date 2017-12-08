@@ -1,0 +1,11 @@
+c:\users\raule\Source\repos\ProgramList\ProgramList\bin\Debug\netcoreapp2.0\ProgramList.deps.json
+c:\users\raule\Source\repos\ProgramList\ProgramList\bin\Debug\netcoreapp2.0\ProgramList.runtimeconfig.json
+c:\users\raule\Source\repos\ProgramList\ProgramList\bin\Debug\netcoreapp2.0\ProgramList.runtimeconfig.dev.json
+c:\users\raule\Source\repos\ProgramList\ProgramList\bin\Debug\netcoreapp2.0\ProgramList.dll
+c:\users\raule\Source\repos\ProgramList\ProgramList\bin\Debug\netcoreapp2.0\ProgramList.pdb
+c:\users\raule\Source\repos\ProgramList\ProgramList\obj\Debug\netcoreapp2.0\ProgramList.csprojResolveAssemblyReference.cache
+c:\users\raule\Source\repos\ProgramList\ProgramList\obj\Debug\netcoreapp2.0\ProgramList.csproj.CoreCompileInputs.cache
+c:\users\raule\Source\repos\ProgramList\ProgramList\obj\Debug\netcoreapp2.0\ProgramList.AssemblyInfoInputs.cache
+c:\users\raule\Source\repos\ProgramList\ProgramList\obj\Debug\netcoreapp2.0\ProgramList.AssemblyInfo.cs
+c:\users\raule\Source\repos\ProgramList\ProgramList\obj\Debug\netcoreapp2.0\ProgramList.dll
+c:\users\raule\Source\repos\ProgramList\ProgramList\obj\Debug\netcoreapp2.0\ProgramList.pdb
