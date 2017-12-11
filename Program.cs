@@ -12,48 +12,48 @@ namespace ProgramList
         {
 
             String cadena = "";
-            Console.WriteLine("Escribe la cadena de texto: ");
+            Console.WriteLine("Write the text string: ");
             cadena = Console.ReadLine();
-            var letras = cadena.ToCharArray();
+            var letter = cadena.ToCharArray();
             string letters = new string(letras);
-            Console.WriteLine("Cadena original: {0}", cadena);
-            Console.WriteLine("Iteracion realizada: ");
-            List<char> evaluacion = new List<char>();
-            bool bandera = false;
-            string datoR = "";
+            Console.WriteLine("Original String: {0}", cadena);
+            Console.WriteLine("Iteration done: ");
+            List<char> evaluation = new List<char>();
+            bool flag = false;
+            string dataR = "";
 
-            for (int c = 0; c < letras.Length; c++)
+            for (int c = 0; c < letter.Length; c++)
             {
 
                 Console.WriteLine("{1}", c, cadena[c]);
 
                 if (c == 0)
                 {
-                    evaluacion.Add(letras[c]);
+                    evaluation.Add(letter[c]);
                 }
                 else
                 {
 
-                    foreach (char dr in evaluacion)
+                    foreach (char dr in evaluation)
                     {
-                        if (dr == letras[c])
+                        if (dr == letter[c])
                         {
 
-                            bandera = true;
+                            flag = true;
                             continue;
 
                         }
                     }
 
 
-                    if (bandera == false)
+                    if (flag == false)
                     {
 
-                        evaluacion.Add(letras[c]);
+                        evaluation.Add(letter[c]);
                     }
                     else {
 
-                        bandera = false;
+                        flag = false;
 
                     }
 
@@ -62,15 +62,15 @@ namespace ProgramList
             
             }
 
-            foreach (char item in evaluacion)
+            foreach (char item in evaluation)
             {
                 
-                datoR = datoR + item;                
+                dataR = dataR + item;                
                 
             }
 
 
-            Console.WriteLine("Cadena final: {0}", datoR);
+            Console.WriteLine("Final chain: {0}", dataR);
             
 
             Console.ReadKey();
