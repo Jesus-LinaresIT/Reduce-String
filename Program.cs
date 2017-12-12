@@ -13,7 +13,7 @@ namespace ProgramList
 
             String Words_Str = "";
             Console.WriteLine("Write the text string: ");
-            cadena = Console.ReadLine();
+            Words_Str = Console.ReadLine();
             var letter = Words_Str.ToCharArray();
             string letters = new string(letter);
             Console.WriteLine("Original String: {0}", Words_Str);
