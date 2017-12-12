@@ -11,12 +11,12 @@ namespace ProgramList
         static void Main(string[] args)
         {
 
-            String cadena = "";
+            String Words_Str = "";
             Console.WriteLine("Write the text string: ");
             cadena = Console.ReadLine();
-            var letter = cadena.ToCharArray();
-            string letters = new string(letras);
-            Console.WriteLine("Original String: {0}", cadena);
+            var letter = Words_Str.ToCharArray();
+            string letters = new string(letter);
+            Console.WriteLine("Original String: {0}", Words_Str);
             Console.WriteLine("Iteration done: ");
             List<char> evaluation = new List<char>();
             bool flag = false;
@@ -25,7 +25,7 @@ namespace ProgramList
             for (int c = 0; c < letter.Length; c++)
             {
 
-                Console.WriteLine("{1}", c, cadena[c]);
+                Console.WriteLine("{1}", c, Words_Str[c]);
 
                 if (c == 0)
                 {
