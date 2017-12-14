@@ -1,89 +1,55 @@
-﻿using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System;
+﻿using System;
+using System.Collections.Generic;
 
 namespace ProgramList
 {
-    class Program
+    internal class Program
     {
-
-        static void Main(string[] args)
+        private static void Main(string[] args)
         {
+            var Words_Str = "";
+            Console.WriteLine("Write the text string: ");
+            Words_Str = Console.ReadLine();
+            var letter = Words_Str.ToCharArray();
+            var letters = new string(letter);
+            Console.WriteLine("Original String: {0}", Words_Str);
+            Console.WriteLine("Iteration done: ");
+            var evaluation = new List<char>();
+            var flag = false;
+            var dataR = "";
 
-            String cadena = "";
-            Console.WriteLine("Escribe la cadena de texto: ");
-            cadena = Console.ReadLine();
-            var letras = cadena.ToCharArray();
-            string letters = new string(letras);
-            Console.WriteLine("Cadena original: {0}", cadena);
-            Console.WriteLine("Iteracion realizada: ");
-            List<char> evaluacion = new List<char>();
-            bool bandera = false;
-            string datoR = "";
-
-            for (int c = 0; c < letras.Length; c++)
+            for (var c = 0; c < letter.Length; c++)
             {
-
-                Console.WriteLine("{1}", c, cadena[c]);
+                Console.WriteLine("{1}", c, Words_Str[c]);
 
                 if (c == 0)
                 {
-                    evaluacion.Add(letras[c]);
+                    evaluation.Add(letter[c]);
                 }
                 else
                 {
-
-                    foreach (char dr in evaluacion)
-                    {
-                        if (dr == letras[c])
+                    foreach (var dr in evaluation)
+                        if (dr == letter[c])
                         {
-
-                            bandera = true;
-                            continue;
-
+                            flag = true;
                         }
-                    }
 
 
-                    if (bandera == false)
-                    {
-
-                        evaluacion.Add(letras[c]);
-                    }
-                    else {
-
-                        bandera = false;
-
-                    }
-
-
+                    if (flag == false)
+                        evaluation.Add(letter[c]);
+                    else
+                        flag = false;
                 }
-            
             }
 
-            foreach (char item in evaluacion)
-            {
-                
-                datoR = datoR + item;                
-                
-            }
+            foreach (var item in evaluation)
+                dataR = dataR + item;
 
 
-            Console.WriteLine("Cadena final: {0}", datoR);
-            
+            Console.WriteLine("Final chain: {0}", dataR);
 
+            Console.WriteLine("Press any key to exit");
             Console.ReadKey();
         }
     }
 }
-
-
-
-
-
-
-
-
-
-
